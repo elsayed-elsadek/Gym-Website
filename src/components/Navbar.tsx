@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-gray-900 bg-opacity-90 shadow-lg backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <span className="text-2xl font-extrabold text-yellow-400 tracking-widest">PowerHouse</span>
+        <span className="text-2xl font-extrabold text-yellow-400 tracking-widest">Power House</span>
         <button
           className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none"
           onClick={() => setOpen(!open)}

@@ -90,8 +90,7 @@ const LocationSection: React.FC = () => {
           </a>
         </div>
       </div>
-      {/* إزالة الرابط الموحد من الأسفل */}
-      {/* تم نقل وسائل التواصل إلى قسم تواصل معنا */}
+  
       <p className="text-center text-yellow-300 font-bold mt-8 text-lg">!ابدأ رحلتك مع بيئة محفزة ودعم مستمر من فريقنا حتى تحقق أفضل نتائجك</p>
     </section>
   );

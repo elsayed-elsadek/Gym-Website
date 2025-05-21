@@ -23,7 +23,7 @@ const services = [
   },
   {
     title: 'ساونا وجاكوزي',
-    img: require('../assets/img (13).jpg'),
+    img: require('../assets/img22.jpeg'),
     desc: 'مرافق استرخاء متكاملة بعد التمرين.'
   },
   {

@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 
 const galleryImages = [
-  require('../assets/img (8).jpg'),
-  require('../assets/img (9).jpg'),
-  require('../assets/img (10).jpg'),
   require('../assets/img (11).jpg'),
+  require('../assets/img (12).jpg'),
   require('../assets/img (16).jpg'),
   require('../assets/img (17).jpg'),
   require('../assets/img (18).jpg'),
-  require('../assets/img (19).jpg')
+  require('../assets/img (19).jpg'),
+  require('../assets/img (25).jpg'),
+  require('../assets/img (21).jpg'),
+  require('../assets/img (22).jpg'),
+  require('../assets/img (13).jpg'),
+
+
 ];
 
 const GallerySection: React.FC = () => {
@@ -42,13 +46,19 @@ const GallerySection: React.FC = () => {
         >
           <div className="relative max-w-3xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
             <button
-              className="absolute top-2 left-2 bg-red-600 text-white rounded-full w-10 h-10 flex items-center justify-center text-2xl font-bold shadow-lg hover:bg-red-700 transition"
+              className="absolute top-2 left-7 bg-red-600 text-white flex items-center justify-center rounded-full w-10 h-10 text-2xl font-bold shadow-lg hover:bg-red-700 transition z-50 focus:outline-none focus:ring-2 focus:ring-red-400"
+              style={{lineHeight: 1, padding: 0}}
               onClick={closeModal}
               aria-label="إغلاق الصورة"
             >
-              ×
+              <span className="flex items-center justify-center w-full h-full">×</span>
             </button>
-            <img src={modalImg} alt="صورة مكبرة" className="rounded-2xl max-h-[80vh] w-auto max-w-[95vw] sm:max-w-2xl object-contain border-4 border-yellow-400 shadow-2xl" />
+            <img
+              src={modalImg}
+              alt="صورة مكبرة"
+              className="rounded-2xl object-cover border-4 border-yellow-400 shadow-2xl"
+              style={{ width: '90vw', maxWidth: 500, height: 350 }}
+            />
           </div>
         </div>
       )}
