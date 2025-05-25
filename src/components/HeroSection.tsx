@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import homeImg from '../assets/home.jpg';
 const homeImg = require('../assets/home.jpg');
 
 const HeroSection: React.FC = () => {
-  useEffect(() => { AOS.init({ duration: 1200, once: true }); }, []);
+  useEffect(() => { AOS.init({ duration: 1000, once: true }); }, []);
   return (
     <header
       id="home"

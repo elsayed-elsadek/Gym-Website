@@ -1,19 +1,6 @@
 import React, { useState } from 'react';
+import { galleryImages } from '../data/galleryImages';
 
-const galleryImages = [
-  require('../assets/img (11).jpg'),
-  require('../assets/img (12).jpg'),
-  require('../assets/img (16).jpg'),
-  require('../assets/img (17).jpg'),
-  require('../assets/img (18).jpg'),
-  require('../assets/img (19).jpg'),
-  require('../assets/img (25).jpg'),
-  require('../assets/img (21).jpg'),
-  require('../assets/img (22).jpg'),
-  require('../assets/img (13).jpg'),
-
-
-];
 
 const GallerySection: React.FC = () => {
   const [modalImg, setModalImg] = useState<string | null>(null);
@@ -32,8 +19,8 @@ const GallerySection: React.FC = () => {
               src={img}
               alt={`صورة الجيم ${idx+1}`}
               className="rounded-2xl h-56 w-[80vw] max-w-xs min-w-[220px] sm:min-w-[300px] object-cover shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer border-2 border-yellow-400"
-              data-aos="zoom-in"
-              data-aos-delay={idx * 100}
+              data-aos="slide-down"
+              data-aos-delay={idx * 150}
               onClick={() => openModal(img)}
             />
           </div>

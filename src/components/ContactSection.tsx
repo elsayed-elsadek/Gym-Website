@@ -42,6 +42,41 @@ const ContactSection: React.FC = () => {
           إرسال
         </button>
       </form>
+
+      {/* رقم الهاتف مع إمكانية الاتصال المباشر للفرعين */}
+      <div className="flex flex-col items-center mt-8 w-full">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-4">أرقام الهاتف</h3>
+        <div className="flex flex-row gap-4 w-full max-w-md justify-center">
+
+         {/* الفرع الثاني */}
+          <div className="flex flex-col items-center bg-gray-800 rounded-xl px-4 py-3 shadow-md w-1/2 min-w-[140px]">
+            <span className="text-gray-400 text-sm mb-1">الفرع الثاني</span>
+            <a
+              href="tel:01060760385"
+              className="text-base font-bold text-yellow-300 bg-gray-900 px-4 py-2 rounded-full shadow-lg hover:bg-yellow-400 hover:text-white transition mb-1"
+              dir="ltr"
+            >
+              01060760385
+            </a>
+          </div>
+         
+          {/* الفرع الاول */}
+          <div className="flex flex-col items-center bg-gray-800 rounded-xl px-4 py-3 shadow-md w-1/2 min-w-[140px]">
+            <span className="text-gray-400 text-sm mb-1">الفرع الأول</span>
+            <a
+              href="tel:01556677870"
+              className="text-base font-bold text-yellow-300 bg-gray-900 px-4 py-2 rounded-full shadow-lg  hover:bg-yellow-400 hover:text-white transition mb-1"
+              dir="ltr"
+            >
+              01556677870
+            </a>
+          </div>
+          
+         
+        </div>
+      </div>
+
+      {/* حساباتنا على السوشيال ميديا */}
       <div className="flex flex-col gap-4 items-center mt-8">
         <h3 className="text-2xl font-bold text-yellow-400 mb-2">حساباتنا على السوشيال ميديا</h3>
         <div className="flex gap-4 justify-center flex-wrap">
@@ -77,7 +112,8 @@ const ContactSection: React.FC = () => {
             aria-label="Facebook"
             className="hover:scale-110 transition"
           >
-            <span className="flex items-center justify-center w-12 h-12 rounded-full bg-yellow-400 shadow-lg">
+            <span 
+            className="flex items-center justify-center w-12 h-12 rounded-full bg-yellow-400 shadow-lg">
               <svg
                 width="28"
                 height="28"
@@ -95,7 +131,6 @@ const ContactSection: React.FC = () => {
           </a>
         </div>
       </div>
-      
     </section>
   );
 };
