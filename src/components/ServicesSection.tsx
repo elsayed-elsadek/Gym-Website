@@ -15,8 +15,8 @@ const ServicesSection: React.FC = () => (
       {services.map((service, idx) => (
         <div key={idx} 
         className="bg-gray-800 rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 flex flex-col h-full"
-         data-aos="zoom-out" 
-         data-aos-delay={idx * 100}
+        //  data-aos="zoom-out" 
+        //  data-aos-delay={idx * 100}
          >
 
           <img 

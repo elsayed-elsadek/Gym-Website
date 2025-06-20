@@ -11,33 +11,45 @@ const ContactSection: React.FC = () => {
       id="contact"
       className="py-20 px-4 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl shadow-2xl my-12 max-w-xl mx-auto"
       data-aos="fade-up"
+      aria-labelledby="contact-title"
     >
-      <h2 className="text-4xl font-extrabold text-yellow-400 mb-10 text-center">تواصل معنا</h2>
+      <h2 id="contact-title" className="text-4xl font-extrabold text-yellow-400 mb-10 text-center">
+        تواصل معنا
+      </h2>
       <form
         className="flex flex-col gap-6 bg-gray-800 rounded-2xl p-8 shadow-xl"
         onSubmit={handleSubmit}
+        aria-label="نموذج التواصل"
+        autoComplete="on"
       >
         <input
           type="text"
+          name="name"
           placeholder="الاسم"
           required
           className="p-4 rounded-md bg-gray-900 text-white placeholder-gray-400 text-lg"
+          aria-label="الاسم"
         />
         <input
           type="email"
+          name="email"
           placeholder="البريد الإلكتروني"
           required
           className="p-4 rounded-md bg-gray-900 text-white placeholder-gray-400 text-lg"
+          aria-label="البريد الإلكتروني"
         />
         <textarea
+          name="message"
           placeholder="رسالتك"
           rows={4}
           required
           className="p-4 rounded-md bg-gray-900 text-white placeholder-gray-400 text-lg"
+          aria-label="رسالتك"
         />
         <button
           type="submit"
           className="bg-yellow-400 text-gray-900 font-bold py-4 rounded-md text-lg hover:bg-yellow-300 transition"
+          aria-label="إرسال الرسالة"
         >
           إرسال
         </button>

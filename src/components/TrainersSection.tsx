@@ -35,8 +35,9 @@ const TrainersSection: React.FC = () => (
 
         <div key={idx} 
         className="bg-gray-800 rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 flex flex-col items-center"
-         data-aos="zoom-in"
-          data-aos-delay={idx * 100}>
+        //  data-aos="zoom-in"
+        //   data-aos-delay={idx * 100}
+          >
 
           <img src={trainer.img} alt={trainer.name} 
           className="rounded-full mb-4 w-36 h-36 object-cover border-4 border-yellow-400 shadow-lg" />

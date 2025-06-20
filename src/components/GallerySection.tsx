@@ -19,8 +19,8 @@ const GallerySection: React.FC = () => {
               src={img}
               alt={`صورة الجيم ${idx+1}`}
               className="rounded-2xl h-56 w-[80vw] max-w-xs min-w-[220px] sm:min-w-[300px] object-cover shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer border-2 border-yellow-400"
-              data-aos="slide-down"
-              data-aos-delay={idx * 150}
+              // data-aos="slide-down"
+              // data-aos-delay={idx * 150}
               onClick={() => openModal(img)}
             />
           </div>
